@@ -3,16 +3,16 @@ export  const cardComponent = (product) =>{
      `<div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-[300px]">
       <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-[250px]">
         <img
-          src=${product?.image || "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"}
+          src=${product?.imageUrl || "https://www.svgrepo.com/show/508699/landscape-placeholder.svg"}
           alt="card-image" class="object-cover w-full h-full" />
       </div>
       <div class="p-6">
         <div class="flex items-center justify-between mb-2">
           <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-            ${product?.title || "Untitled"} 
+            ${product?.name || "Untitled"} 
           </p>
           <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-            ${product?.price || "0.00"}
+            ${product?.originPrice || "0.00"}
           </p>
         </div>
 
