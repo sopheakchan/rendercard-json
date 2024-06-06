@@ -1,9 +1,8 @@
 import { cardComponent } from "../components/cardComponents.js";
-import { products } from "../data/products.js";
 
 
-let renderArea = document.querySelector('#card-area');
-const BASE_URL = "http://172.16.0.249:5500/data/products.json"
+let renderArea = document.querySelector("#card-area");
+const BASE_URL =  "http://192.168.1.39:5500/data/products.json"
 // products.map(products => {
 //   renderArea.innerHTML += cardComponent(products);
 // })
